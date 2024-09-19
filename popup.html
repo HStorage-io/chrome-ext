@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>HStorage Screenshot Capture</title>
+	<meta charset="utf-8">
+	<style>
+		body {
+			width: 500px;
+			padding: 20px;
+			background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+			font-family: Arial, sans-serif;
+		}
+
+		.container {
+			background: rgba(255, 255, 255, 0.1);
+			border-radius: 10px;
+			padding: 20px;
+			box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+			backdrop-filter: blur(4px);
+			border: 1px solid rgba(255, 255, 255, 0.18);
+		}
+
+		p {
+			color: #ffffff;
+			font-size: 16px;
+			text-align: center;
+			margin-top: 20px;
+			font-weight: bold;
+		}
+
+		h1 {
+			color: #ffffff;
+			font-size: 30px;
+			text-align: center;
+			margin-bottom: 20px;
+			font-weight: bold;
+		}
+
+		button {
+			margin: 10px 0;
+			padding: 12px;
+			width: 100%;
+			background: linear-gradient(45deg, #2196F3, #21CBF3);
+			border: none;
+			border-radius: 5px;
+			color: white;
+			font-size: 16px;
+			font-weight: bold;
+			cursor: pointer;
+			transition: transform 0.3s ease;
+		}
+
+		button:hover {
+			transform: translateY(-3px);
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<h1>HStorage Screenshot Capture</h1>
+		<a href="https://hstorage.io/" target="_blank" rel="noreferrer">
+			<img src="images/logo.png" alt="HStorage Logo" width="150" style="display: block; margin: 0 auto;">
+		</a>
+		<button id="fullScreenshot">全体をキャプチャ</button>
+		<button id="partialScreenshot">一部をキャプチャ</button>
+		<hr>
+		<p>HStorage は直リンクやファイル管理のできる無料のクラウドストレージサービスです。</p>
+		<p>Powered by HCloud Ltd</p>
+	</div>
+	<script src="popup.js"></script>
+</body>
+
+</html>
