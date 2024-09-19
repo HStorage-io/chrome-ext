@@ -91,7 +91,7 @@ function captureSelectedArea() {
   }).then(async (canvas) => {
     const dataUrl = canvas.toDataURL("image/png");
     const base64EncodedFileName = await uploadFile(dataUrl);
-    copyToClipboard("http://localhost:8080/show/" + base64EncodedFileName);
+    copyToClipboard("https://hstorage.io/show/" + base64EncodedFileName);
   });
 }
 
