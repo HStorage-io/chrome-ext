@@ -16,7 +16,7 @@ async function uploadFile(dataUrl) {
     });
 
     if (uploadResponse.ok) {
-      return btoa(config.file_name);
+      return config.external_id;
     } else {
       throw new Error("ファイルのアップロードに失敗しました");
     }

@@ -103,8 +103,6 @@ function copyToClipboard(text) {
       alert("URLをクリップボードにコピーしました🐶");
     })
     .catch((err) => {
-      console.warn("Clipboard API failed, falling back to execCommand", err);
-
       // Clipboard API が失敗した場合、execCommand を使用
       const textArea = document.createElement("textarea");
       textArea.value = text;
