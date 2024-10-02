@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "HStorage Screen Capture",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "ページの全体スクリーンショット、部分スクリーンショットを即座に hstorage.io へアップロードし、共有リンクを取得します。",
   "icons": {
     "16": "images/icon16.png",
