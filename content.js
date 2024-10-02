@@ -130,8 +130,8 @@ function copyToClipboard(text) {
 
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
   if (request.action === "startFullScreenshot") {
-    uploadFile(request.dataUrl).then((base64EncodedFileName) => {
-      copyToClipboard("https://hstorage.io/show/" + base64EncodedFileName);
+    uploadFile(request.dataUrl).then((showURL) => {
+      copyToClipboard(showURL);
     });
   }
   if (request.action === "startPartialScreenshot") {
