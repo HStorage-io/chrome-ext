@@ -90,8 +90,8 @@ function captureSelectedArea() {
     },
   }).then(async (canvas) => {
     const dataUrl = canvas.toDataURL("image/png");
-    const base64EncodedFileName = await uploadFile(dataUrl);
-    copyToClipboard("https://hstorage.io/show/" + base64EncodedFileName);
+    const shareURL = await uploadFile(dataUrl);
+    copyToClipboard(shareURL);
   });
 }
 
